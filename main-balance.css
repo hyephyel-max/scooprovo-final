@@ -1,0 +1,115 @@
+/* Limited polish: main hero, header navigation, shared cup. */
+header nav[aria-label="주 메뉴"]{align-items:center;gap:7px}
+header nav[aria-label="주 메뉴"] a{padding:10px 13px;border-radius:999px;color:#174e45;font-weight:650;transition:background .18s,color .18s}
+header nav[aria-label="주 메뉴"] a.active{background:#165e55;color:#fff;font-weight:750}
+header nav[aria-label="주 메뉴"] a:hover:not(.active){background:#d6eee6;color:#174e45}
+header nav[aria-label="주 메뉴"] a:after{display:none!important}
+.hero{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr);gap:44px;min-height:620px;padding-top:48px;padding-bottom:58px;align-items:center}
+.hero-copy h1{font-size:clamp(36px,4.6vw,58px);line-height:1.24;margin:18px 0 26px;letter-spacing:-.06em;color:#234b43}
+.hero-copy p{line-height:1.85;color:#5d6d66}.hero-copy .actions{gap:12px}
+.hero-copy .actions>a.btn:first-child{font-size:18px;min-height:58px;padding:16px 28px;background:#165e55;border-color:#165e55;box-shadow:none;border-radius:999px}
+.hero-copy .actions>a.btn.secondary{border:0;background:none;color:#365e53;padding:12px 4px;font-size:14px;text-decoration:underline;text-underline-offset:6px;box-shadow:none}
+.hero-visual{display:grid;grid-template-columns:minmax(0,1fr) 165px;gap:0;align-items:center;min-height:465px;border:0;border-radius:0;background:transparent;overflow:visible;padding:12px 0 30px;position:relative}
+.hero-pair{width:100%;max-width:100%;height:410px;object-fit:contain;margin:0;min-width:0;align-self:center}
+.hero-visual:before{content:"";position:absolute;left:2%;right:20%;bottom:65px;height:230px;border-radius:50%;background:#def4ee;z-index:-1}
+.hero-sticker.serving-card{position:static;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;transform:none;top:auto;right:auto;width:auto;min-height:0;height:auto;max-width:none;border:0;border-radius:20px;background:#fff;padding:20px 17px;box-shadow:0 8px 35px #245c4809;color:#254f45;text-align:left;z-index:1}
+.serving-card .serving-scoops{display:flex;align-items:end;height:44px;margin:0 0 15px}
+.serving-scoops img{width:42px;height:42px;object-fit:contain;margin-right:-8px}.serving-scoops img:nth-child(2){transform:translateY(-5px)}
+.serving-card .serving-kicker{font-size:8px;letter-spacing:.09em;color:#58786b;line-height:1.6}
+.serving-card h2{font-size:22px;line-height:1.4;margin:10px 0 8px;letter-spacing:-.045em;font-weight:750}
+.serving-card p{font-size:13px;color:#6f7d75;line-height:1.65;margin:0 0 18px}
+.serving-card strong{font-size:33px;line-height:1.2;color:#165e55;letter-spacing:-.055em;white-space:nowrap}
+.serving-card strong span{font-size:15px;margin-left:3px}
+.serving-card .serving-weight{font-size:10px;white-space:nowrap;border-top:1px solid #e7efea;padding-top:12px;margin-top:13px;color:#6a7e73}
+.hero-caption{left:0;right:0;bottom:0;font-size:10px;color:#83958b}
+@media(max-width:1100px) and (min-width:761px){header{padding-left:24px;padding-right:24px;gap:14px}header nav[aria-label="주 메뉴"]{gap:2px;font-size:13px}header nav[aria-label="주 메뉴"] a{padding:10px 10px}.hero{gap:24px}.hero-visual{grid-template-columns:minmax(0,1fr) 150px}.serving-card h2{font-size:20px}.hero-sticker.serving-card{padding:18px 14px}.hero-pair{height:390px}.hero-copy .actions{gap:8px}.hero-copy .actions>a.btn:first-child{padding:14px 21px}}
+@media(max-width:760px){header nav[aria-label="주 메뉴"]{gap:2px;justify-content:space-between;font-size:12px;padding:5px 0 10px}header nav[aria-label="주 메뉴"] a{padding:9px 8px}.hero{display:flex;gap:24px;padding-top:36px;padding-bottom:40px;min-height:0}.hero-copy h1{font-size:44px}.hero-copy .actions>a.btn:first-child{width:auto;flex:1;font-size:17px}.hero-copy .actions>a.btn.secondary{flex:1;text-align:center;line-height:1.5}.hero-visual{width:100%;min-height:365px;grid-template-columns:minmax(0,1fr) 140px;margin:0;padding-bottom:25px}.hero-pair{width:100%;height:330px;margin:0}.hero-sticker.serving-card{padding:16px 13px;border-radius:16px}.serving-card h2{font-size:20px}.serving-card strong{font-size:31px}.hero-visual:before{bottom:55px;height:180px}.hero-caption{font-size:9px}.serving-card p{font-size:12px;margin-bottom:14px}.serving-card .serving-weight{font-size:9px}.hero .fine{font-size:13px}}
+@media(max-width:390px){header nav[aria-label="주 메뉴"]{font-size:11px}header nav[aria-label="주 메뉴"] a{padding:8px 6px}.hero-copy h1{font-size:39px}.hero-visual{grid-template-columns:minmax(0,1fr) 130px}.hero-pair{height:300px}.hero-sticker.serving-card{padding:14px 11px}.serving-card h2{font-size:18px}.serving-card strong{font-size:28px}}
+
+/* Preserve the original white secondary hero button. */
+.hero-copy .actions>a.btn.secondary{border:1px solid #b5c8c0;background:#fff;color:#365e53;padding:13px 22px;font-size:14px;text-decoration:none;text-underline-offset:initial;box-shadow:none;border-radius:12px;min-height:50px}
+@media(max-width:760px){.hero-copy .actions>a.btn.secondary{flex:initial;padding:13px 17px}}
+
+/* Equal-size hero actions; retain each button's established color. */
+.hero-copy .actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;max-width:430px}
+.hero-copy .actions>a.btn:first-child,.hero-copy .actions>a.btn.secondary{width:100%;min-width:0;min-height:58px;height:58px;padding:14px 10px;font-size:16px;line-height:1.3;white-space:nowrap;border-radius:12px;margin:0}
+@media(max-width:390px){.hero-copy .actions{gap:8px}.hero-copy .actions>a.btn:first-child,.hero-copy .actions>a.btn.secondary{font-size:14px;padding:12px 8px;height:54px;min-height:54px}}
+
+/* Compact, legible actions across the prototype. */
+.btn.secondary{background:#fff;color:#165e55;border:2px solid #397b6c;font-weight:750;box-shadow:0 2px 0 #165e5510}
+.btn.secondary:hover{background:#e2f3ed;border-color:#165e55;color:#104c43}
+.btn.secondary:focus-visible{outline:3px solid #165e55;outline-offset:4px}
+.hero-copy .actions{display:flex;flex-wrap:wrap;gap:12px;max-width:none}
+.hero-copy .actions>a.btn:first-child,.hero-copy .actions>a.btn.secondary{flex:0 0 168px;width:168px;min-height:58px;height:58px;padding:12px 8px;font-size:15px;line-height:1.3;font-weight:800;white-space:nowrap;border-radius:12px}
+.hero-copy .actions>a.btn:first-child{background:#105d52;border:2px solid #105d52;color:white;box-shadow:0 4px 10px #165e551a}
+.hero-copy .actions>a.btn.secondary{background:#fff;border:2px solid #397b6c;color:#165e55;box-shadow:0 2px 0 #165e5510}
+@media(max-width:390px){.hero-copy .actions{gap:8px}.hero-copy .actions>a.btn:first-child,.hero-copy .actions>a.btn.secondary{flex-basis:calc((100% - 8px)/2);width:calc((100% - 8px)/2);font-size:14px}}
+
+/* Tighter actions and a unified deep teal control palette. */
+:root{--pink:#064c43;--ink:#264b43;--muted:#65796f}
+.notice{background:#064c43;color:#fff}
+.share-trigger{background:#064c43!important;border-color:#064c43!important;color:#fff!important}.share-trigger:hover{background:#033e36!important}
+.eyebrow{color:#326b5e}
+header nav[aria-label="주 메뉴"] a.active{background:#064c43;color:#fff}
+.hero-copy .actions{gap:10px;max-width:310px}
+.hero-copy .actions>a.btn:first-child,.hero-copy .actions>a.btn.secondary{flex:0 0 150px;width:150px;min-height:50px;height:50px;padding:10px 6px;font-size:14px;font-weight:750;border-radius:10px;gap:0}
+.hero-copy .actions>a.btn:first-child{background:#064c43;border-color:#064c43;box-shadow:none}
+.hero-copy .actions>a.btn.secondary{border-color:#064c43;color:#064c43;box-shadow:none}
+.btn.secondary{border-color:#1c6659;color:#064c43}.hero-sticker.serving-card strong{color:#064c43}
+@media(max-width:390px){.hero-copy .actions{gap:8px;max-width:308px}.hero-copy .actions>a.btn:first-child,.hero-copy .actions>a.btn.secondary{flex:1 1 0;width:auto;min-width:0;font-size:13px}}
+
+.robot-intro-page>.robot-origin{max-width:1000px;margin:40px auto 64px}.robot-intro-page>.robot-origin>h2{text-align:center;font-size:28px}.robot-intro-page>.robot-origin>.eyebrow{text-align:center}
+
+/* Scoped robot event presentation, retaining the existing mint/teal brand palette. */
+.robot-event-page{padding-top:48px;padding-bottom:40px}
+.robot-event-page>.robot-origin{margin:0 auto 56px;max-width:none}
+.robot-event-page .robot-origin>.eyebrow,.robot-event-page .robot-origin>h2{text-align:center}
+.robot-event-page .origin-panels{align-items:stretch}
+.robot-event-page .origin-panel{padding:16px;border-radius:24px;background:#fffef3;min-width:0}
+.robot-event-page .origin-panel h3{font-size:19px;line-height:1.5;margin:14px 0 18px;word-break:keep-all}
+.robot-event-page .origin-panel p{font-size:16px;line-height:1.85;word-break:keep-all;overflow-wrap:break-word}
+.robot-event-page .robot-event-campaign{max-width:none;width:100%;margin:0 auto;padding:40px;background:#c1ecdf;border-color:#b3dfd0;border-radius:28px;text-align:left}
+.robot-event-page .campaign-prize{display:block;margin:0 0 20px}
+.robot-event-page .campaign-prize .prize-card{display:none}
+.robot-event-page .event-kicker{display:inline-block;padding:4px 9px;background:#a9e8d5;margin-bottom:16px;color:#07584f}
+.robot-event-page .campaign-prize h2{font-size:clamp(29px,4vw,48px);line-height:1.4;text-align:left;margin:0;color:#154f45}
+.event-rewards{display:flex;gap:12px;flex-wrap:wrap;margin:20px 0 28px}
+.event-rewards span{display:block;padding:10px 20px;background:#fff;border-radius:999px;font-size:17px;font-weight:700;color:#07584f}
+.event-rewards span:first-child{background:#805841;color:#fffef3}
+.robot-event-page .bear-biography{text-align:left;margin:0 0 28px;max-width:none}
+.robot-event-page .bear-biography h2{font-size:20px;line-height:1.9;font-weight:500;margin:0 0 10px}
+.robot-event-page .bear-biography p{font-size:19px;line-height:1.9;margin:0}
+.robot-event-page .bear-peek-stage{max-width:none;width:100%;height:auto;aspect-ratio:1.65;min-height:0;border-radius:28px;margin:30px 0;isolation:isolate}
+.robot-event-page .bear-peek{width:75%;height:95%;animation:event-bear-wave 6s ease-in-out infinite}
+@keyframes event-bear-wave{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-6px) rotate(2deg)}}
+.robot-event-page .bear-work-link{position:absolute;left:24px;bottom:24px;z-index:4;gap:12px}
+.robot-event-page .bear-work-link>span{background:#fff;color:#07584f;width:34px;height:34px;border-radius:50%;display:grid;place-items:center}
+.event-details{display:grid;gap:12px;margin:30px 0}
+.event-details>div{display:grid;grid-template-columns:50px minmax(0,1fr);gap:12px;font-size:17px;line-height:1.8}
+.event-details dt{font-weight:800;color:#154f45}.event-details dd{margin:0;color:#496b60}
+.robot-event-page .bear-name-form{max-width:none;width:100%;padding:28px;margin:28px 0 24px;background:#fff;border-radius:24px;display:grid;gap:14px;text-align:left}
+.robot-event-page .bear-name-form .event-visible-label{position:static!important;width:auto!important;height:auto!important;overflow:visible!important;clip-path:none!important;white-space:normal}
+.robot-event-page .bear-name-form label:not(.event-consent){font-size:17px;font-weight:700;color:#234e42}
+.robot-event-page .bear-name-form input:not([type=checkbox]){width:100%;min-width:0;background:#f3fcf8;font-size:17px;padding:16px;border:1px solid #c1dfd3;border-radius:14px;min-height:54px}
+.robot-event-page .event-consent{display:flex;align-items:flex-start;gap:12px;font-size:14px;line-height:1.8;color:#57776a;margin:8px 0}
+.robot-event-page .event-consent input{width:21px;height:21px;flex:0 0 21px;accent-color:#07584f;margin:3px 0 0}
+.robot-event-page .bear-name-form .btn{width:100%;justify-self:stretch;min-height:56px;font-size:18px}
+.event-result:empty{display:none}.event-result{display:grid;gap:8px;padding:18px;background:#effbf5;border:1px dashed #7fae9c;border-radius:12px;color:#07584f}
+.event-result span{font-size:16px}.event-result small{font-size:13px}
+.event-next-links{display:flex;gap:20px;flex-wrap:wrap;margin:20px 0}
+.robot-event-page .robot-event-campaign>.fine{font-size:13px;line-height:1.85;color:#5a786c;margin:22px 0 0}
+@media(max-width:1023px){.robot-event-page .origin-panels{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+ .robot-event-page{padding-top:30px}.robot-event-page .robot-event-campaign{padding:24px 20px;border-radius:22px}
+ .robot-event-page .origin-panel{padding:12px}.robot-event-page .origin-panel h3{font-size:17px;margin-bottom:12px}.robot-event-page .origin-panel p{font-size:14px}
+ .robot-event-page .campaign-prize h2{font-size:29px}.event-rewards{gap:8px}.event-rewards span{font-size:14px;padding:8px 12px}
+ .robot-event-page .bear-biography h2,.robot-event-page .bear-biography p{font-size:16px}
+ .robot-event-page .bear-peek-stage{aspect-ratio:.85;margin:24px 0;min-height:0}.robot-event-page .bear-peek{width:100%;height:86%}
+ .robot-event-page .bear-work-link{left:12px;right:12px;bottom:15px;font-size:13px;padding:10px 8px;gap:8px}
+ .robot-event-page .peek-hello{right:14px;top:18px;padding:8px 14px;font-size:13px}
+ .event-details>div{font-size:15px;grid-template-columns:36px minmax(0,1fr);gap:8px}
+ .robot-event-page .bear-name-form{padding:20px 16px;gap:12px}.robot-event-page .bear-name-form input:not([type=checkbox]){font-size:16px;padding:14px}
+ .robot-event-page .bear-name-form .btn{font-size:15px;min-width:0;white-space:normal}
+ .event-next-links{gap:12px}.event-next-links .text-link{font-size:13px}
+}
+@media(max-width:420px){.robot-event-page .origin-panels{grid-template-columns:minmax(0,1fr)}.robot-event-page .origin-panel{display:grid;grid-template-columns:100px minmax(0,1fr);gap:0 12px;align-items:start}.robot-event-page .origin-art{grid-row:1/3}.robot-event-page .origin-panel h3{margin:0 0 8px}.robot-event-page .origin-panel p{margin:0;font-size:13px}.robot-event-page .campaign-prize h2{font-size:26px}}

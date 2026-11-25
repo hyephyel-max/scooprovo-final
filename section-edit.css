@@ -1,0 +1,7 @@
+/* Retain existing palette and layout; fit the supplied vertical video without cropping. */
+.store-short-section{padding-top:36px;padding-bottom:48px}
+.store-short-screen{display:flex;align-items:center;justify-content:center;min-height:0;background:#dcf7f3}
+.store-short-screen>video{display:block;width:100%;height:auto;min-height:0;max-height:680px;aspect-ratio:9/16;object-fit:contain;background:#dcf7f3}
+.store-page>.page-head{padding-top:12px}
+.review-checkout+.section{padding-top:12px}
+@media(max-width:760px){.store-short-section{padding-top:24px;padding-bottom:36px}.store-short-screen>video{max-height:620px;min-height:0;width:100%;height:auto;aspect-ratio:9/16;object-fit:contain}}

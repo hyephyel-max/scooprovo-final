@@ -1,0 +1,113 @@
+/* Shared cup arrangement: scoops sit inside the cup rather than outside its rim. */
+.hero-visual{background:#fffcdd;min-height:530px;overflow:visible}
+.hero-pair{width:112%;max-width:112%;height:470px;object-fit:contain;margin:20px -6% 36px}
+.hero-sticker{top:15px;right:-4px;width:105px;height:105px}
+.hero-caption{padding:0 18px;bottom:14px;line-height:1.6}
+.cup-visual .scoop-photo{width:40%;height:44%;top:24%;filter:drop-shadow(0 3px 2px #40312215)}
+.cup-visual .scoop-photo:nth-child(1){left:15%;top:24%;transform:rotate(-7deg)}
+.cup-visual .scoop-photo:nth-child(2){left:30%;top:15%;transform:rotate(3deg)}
+.cup-visual .scoop-photo:nth-child(3){right:14%;top:24%;transform:rotate(7deg)}
+.cup-visual.single .scoop-photo{left:21%;top:14%;width:58%;height:53%;transform:none}
+.cup-visual.duo .scoop-photo:nth-child(1){left:15%;top:23%;width:43%;height:46%}
+.cup-visual.duo .scoop-photo:nth-child(2){left:43%;top:23%;width:43%;height:46%}
+.paper-cup{left:14%;top:50%;width:72%;height:36%;background:linear-gradient(100deg,#b6ded5 0%,#dcf7f3 27%,#edfffb 58%,#c3e8df 100%);box-shadow:inset -12px 0 20px #80584112;border-top:0}
+.paper-cup:before{top:0;height:12px;background:linear-gradient(#fffef0,#c2e8df);border:2px solid #fffef0;box-shadow:0 3px 4px #80584117}
+.paper-cup b{font-size:26px;letter-spacing:.02em}
+.paper-cup small{color:#805841}
+.topping-layer{top:47%;width:48%;left:26%}
+.real-cup{position:absolute;z-index:5;left:5%;top:39%;width:90%;height:60%;object-fit:contain;pointer-events:none;clip-path:polygon(0 30%,8% 30%,16% 35%,30% 40%,50% 42%,70% 40%,84% 35%,92% 30%,100% 30%,100% 100%,0 100%)}
+.recipe-photo{position:absolute;left:0;top:0;width:100%;height:94%;object-fit:contain}
+.cup-back.real-cup{z-index:1;clip-path:none}
+.cup-visual .scoop-photo:nth-child(1),.cup-visual .scoop-photo:nth-child(3){top:29%}
+.cup-visual .scoop-photo:nth-child(2){top:20%}
+.cup-visual.single .scoop-photo{top:20%}
+.cup-visual.duo .scoop-photo:nth-child(1),.cup-visual.duo .scoop-photo:nth-child(2){top:28%}
+.combo-art.has-photo img.combo-cup-photo{position:static;left:auto;right:auto;top:auto;transform:none;width:100%;height:100%;object-fit:contain}
+.selected-count{width:auto;min-width:32px;padding:0 5px;font-size:9px}
+.short-screen{position:relative;min-height:470px;background:#fffcdd;overflow:hidden}
+.short-screen>img,.short-screen>video{width:100%;height:100%;min-height:470px;object-fit:cover;object-position:47% 50%}
+.short-status{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);background:#805841e8;color:#fffcdd;font-size:11px;padding:8px 14px;border-radius:30px;white-space:nowrap}
+.work-reel .reel-copy .fine{color:#ddd0c8;font-size:10px;margin-top:18px}
+.work-reel .reel-copy p{font-size:13px}
+@media(max-width:620px){.short-screen,.short-screen>img,.short-screen>video{min-height:380px;max-height:480px}}
+@media(max-width:900px){.hero-pair{height:390px}.hero-visual{min-height:440px}.hero-sticker{width:88px;height:88px;font-size:9px}}
+@media(max-width:620px){.hero-visual{min-height:370px;margin:0}.hero-pair{height:340px;width:110%;max-width:110%;margin:0 -5% 22px}.hero-sticker{top:0;right:-5px;width:82px;height:82px}.hero-caption{font-size:8px;bottom:8px}.paper-cup b{font-size:23px}}
+
+/* Consistent petite serving: three mini scoops, 67g in total. */
+.hero-pair{width:90%;max-width:90%;height:410px;margin:18px auto 40px}
+.hero-visual{min-height:480px}
+.menu-welcome{display:grid;grid-template-columns:1fr 1.1fr;align-items:center;gap:28px;max-width:850px;margin:15px auto 35px;padding:25px 45px;background:#dcf7f3;border-radius:32px}
+.menu-welcome>img{width:100%;height:280px;object-fit:contain}
+.recommend-note>span{font-size:11px;letter-spacing:.08em;background:#fff;padding:7px 13px;border-radius:20px}
+.recommend-note h2{font-size:30px;line-height:1.35;margin:18px 0 10px;letter-spacing:-.06em}
+.recommend-note p{font-size:13px;line-height:1.8}
+.menu-welcome+.page-head{padding-top:15px}
+.combo-art.has-photo{height:225px;background:var(--tile);border-radius:18px;display:flex;align-items:center;justify-content:center}
+.combo-art.has-photo img.combo-cup-photo{width:82%;height:82%;object-fit:contain;max-width:230px;position:static;transform:none;mix-blend-mode:normal}
+.combo:first-child .combo-art{background:#fff}
+.cup-visual{width:285px;height:330px;max-width:100%}
+.recipe-photo{width:86%;height:86%;left:7%;top:7%;object-fit:contain}
+.real-cup{left:8%;top:34%;width:84%;height:64%}
+.cup-visual .scoop-photo{width:29%;height:30%;filter:drop-shadow(0 2px 1px #80584112)}
+.cup-visual .scoop-photo:nth-child(1){left:20%;top:28%;transform:rotate(-4deg)}
+.cup-visual .scoop-photo:nth-child(2){left:36%;top:21%;transform:none}
+.cup-visual .scoop-photo:nth-child(3){right:18%;top:28%;transform:rotate(4deg)}
+.cup-stage{display:flex;flex-direction:column;align-items:center;justify-content:center}
+.cup-note{font-size:11px;bottom:-9px}
+.side-tray{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:20px 0 0;max-width:380px}
+.side-tray figure{margin:0;width:85px;text-align:center;font-size:9px}
+.side-tray img{width:75px;height:62px;object-fit:contain;border-radius:12px;background:#fff}
+.side-tray figcaption{padding-top:4px}
+.topping-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.topping{text-align:center;overflow:hidden;padding:10px;font-weight:700}
+.topping .side-photo{display:block;width:100%;height:100px;object-fit:contain;margin-bottom:9px;background:white;border-radius:10px}
+.topping small{font-weight:500}
+.topping.on{box-shadow:0 0 0 1px #805841;background:#dcf7f3;border-color:#805841}
+.store-image{height:auto!important;aspect-ratio:auto!important;object-fit:contain!important;display:block;background:#fffcdd}
+.short-screen{min-height:0;display:flex;align-items:center;background:#fffcdd}
+.short-screen>img{width:100%;height:auto;min-height:0;max-height:none;object-fit:contain}
+.flavor-spec{padding:18px;background:#f4fbf9;border-radius:16px;margin:20px 0}
+.fiction-label{display:inline-block;font-size:10px;font-weight:800;background:#fff0d6;padding:7px 10px;border-radius:8px}
+.flavor-spec dl{font-size:12px;line-height:1.8;margin:14px 0}
+.flavor-spec dt{font-weight:800;margin-top:11px}
+.flavor-spec dd{margin:3px 0 0}
+.flavor-art .label{font-size:9px;max-width:92%;white-space:normal;line-height:1.6}
+.app-banner{background:#dcf7f3;padding:45px;border-radius:30px;display:grid;grid-template-columns:1.4fr 1fr;gap:45px;align-items:center;margin:35px 0}
+.app-banner h2{font-size:34px;line-height:1.4;letter-spacing:-.05em}
+.app-banner p{line-height:1.8}
+.app-features{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0;font-size:11px}
+.app-features span{padding:8px 10px;background:#ffffff99;border-radius:8px}
+.app-banner .actions{gap:8px}
+.app-banner .btn{font-size:11px;padding:13px 18px}
+.app-phone{width:225px;justify-self:center;background:#fff;border:7px solid #805841;border-radius:30px;padding:22px 14px;text-align:center;box-shadow:8px 12px 0 #80584115;transform:rotate(4deg)}
+.phone-top{font-weight:900;letter-spacing:.05em;font-size:16px;margin-bottom:12px}
+.app-phone img{width:100%;height:150px;object-fit:contain}
+.app-phone b,.app-phone small,.app-phone span{display:block}
+.app-phone small,.app-phone p{font-size:9px}
+.app-phone span{background:#dcf7f3;border-radius:10px;padding:10px;margin:12px 0;font-size:11px}
+.name-recipe{padding:24px;background:#fff;border:1px solid #d0e5df;border-radius:18px;margin-bottom:25px}
+.name-recipe label{display:block;font-size:18px;font-weight:800;margin-bottom:12px}
+.name-recipe input{box-sizing:border-box;width:100%;font-size:15px;border:1px solid #b9d2c9;background:#f6fbf9;color:#805841;padding:14px;border-radius:10px}
+.name-recipe>p{font-size:10px;line-height:1.7}
+.name-recipe h2{font-size:24px;word-break:break-word;margin-bottom:0}
+.cup-back-details{margin:18px 0;padding:15px;background:#dcf7f380;border-radius:12px}
+.cup-back-details summary{cursor:pointer;font-weight:700;font-size:12px}
+.cup-back-preview{width:240px;height:180px;position:relative;margin:15px auto}
+.cup-back-preview>img{width:100%;height:100%;object-fit:contain}
+.printed-note{position:absolute;left:16%;top:43%;width:68%;height:43%;background:#d4ece2;text-align:center;padding:7px 8px;box-sizing:border-box;transform:rotate(-1deg);display:flex;flex-direction:column;justify-content:center;border-radius:5px}
+.printed-note small{font-size:7px}.printed-note p{font-size:10px;line-height:1.5;margin:4px 0}.printed-note b{font-size:9px}
+.order-warning{background:#fffcdd;border:1px solid #e4d8ae;color:#805841;border-radius:12px;padding:17px;font-size:12px;line-height:1.7;margin:16px 0 25px}
+.order-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:25px}
+.order-panel{background:#fff;border:1px solid #e4e0d9;border-radius:20px;padding:25px}
+.order-panel h2{font-size:24px}.order-panel label{display:block;font-size:12px;font-weight:800;margin:18px 0 8px}
+.order-panel select{box-sizing:border-box;width:100%;padding:14px;background:#f1faf7;color:#805841;border:1px solid #c5dbd4;border-radius:10px;font-size:13px}
+.stock-list{max-height:300px;overflow:auto}.stock-list>div{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #f0eeea;font-size:12px}
+.stock-list small{font-size:9px;background:#dcf7f3;padding:4px 6px;border-radius:6px;white-space:nowrap}
+.order-next{text-align:center;margin:30px 0;padding:30px;background:#f1faf7;border-radius:18px}.order-next p{font-size:12px}
+.pickup-finish{padding:20px;background:#f1faf7;border-radius:16px;margin:20px 0}.pickup-finish p{font-size:12px;line-height:1.8}.pickup-finish small{font-size:9px;display:block;margin-top:12px}.pickup-finish .btn{font-size:11px}
+@media(max-width:900px){.hero-pair{height:370px}.hero-visual{min-height:420px}.app-banner{gap:25px;padding:30px}.app-banner h2{font-size:28px}.app-phone{width:190px}.menu-welcome{padding:20px 28px}.recommend-note h2{font-size:26px}}
+@media(max-width:620px){.hero-pair{height:330px;margin:8px auto 32px}.hero-visual{min-height:370px}.menu-welcome{grid-template-columns:1fr 1fr;gap:8px;padding:20px 12px;margin:0 auto 25px;border-radius:22px}.menu-welcome>img{height:200px}.recommend-note>span{font-size:8px;padding:6px}.recommend-note h2{font-size:20px;line-height:1.5}.recommend-note p{font-size:10px}.combo-art.has-photo{height:185px;grid-row:1/6}.combo-art.has-photo img.combo-cup-photo{width:100%;height:100%;max-width:190px}.cup-visual{width:265px;height:310px}.topping-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.topping .side-photo{height:95px}.app-banner{grid-template-columns:1fr;padding:25px}.app-banner h2{font-size:28px}.app-phone{width:190px;transform:rotate(2deg)}.order-grid{grid-template-columns:1fr}.order-panel{padding:20px}.name-recipe{padding:18px}.name-recipe label{font-size:16px}.short-screen>img{min-height:0;max-height:none}}
+
+.cup-compare{display:grid;grid-template-columns:1fr 1fr;gap:24px}.cup-compare article{background:white;border:1px solid #d4e5df;border-radius:25px;padding:24px}.cup-compare article>span{font-size:12px;font-weight:800;background:#dcf7f3;padding:8px 14px;border-radius:20px}.cup-compare article>div{height:360px;display:grid;place-items:center;margin:15px 0}.cup-compare img{width:100%;height:100%;object-fit:contain}.cup-compare h2{font-size:23px}.cup-compare p{font-size:13px;line-height:1.9}@media(max-width:620px){.cup-compare{grid-template-columns:1fr}.cup-compare article>div{height:300px}.cup-compare h2{font-size:20px}}
+
+.flavor-spec dl{font-size:14px}.fiction-label{font-size:12px}.topping{font-size:14px}.topping small{font-size:13px}.side-tray figcaption{font-size:12px}.recommend-note p{font-size:16px}.recommend-note>span{font-size:12px}.app-features{font-size:14px}.app-banner p{font-size:16px}.app-banner .fine{font-size:13px}.app-banner .btn{font-size:14px}.app-phone small,.app-phone p{font-size:12px}.app-phone span{font-size:14px}.name-recipe>p{font-size:13px}.order-warning{font-size:14px}.order-panel label,.order-panel select{font-size:14px}.stock-list>div{font-size:14px}.stock-list small{font-size:12px}.order-next p{font-size:16px}.pickup-finish p{font-size:16px}.pickup-finish small{font-size:12px}.pickup-finish .btn{font-size:14px}.cup-compare article>span{font-size:14px}.cup-compare p{font-size:16px}.cup-back-details summary{font-size:14px}@media(max-width:620px){.recommend-note p{font-size:13px}.recommend-note>span{font-size:12px}.menu-welcome{grid-template-columns:1fr}.menu-welcome>img{height:220px}.recommend-note{text-align:center}.recommend-note h2{font-size:24px}}
